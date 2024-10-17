@@ -1,8 +1,9 @@
 package testCase;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.By;
+
 
 public class test {
 
@@ -29,8 +30,6 @@ public class test {
 			driver.findElement(By.name("Subscribe-button")).click();
 			System.err.println("Test case 3 passed");
 			
-		}else {
-			System.out.println("Test case 3 failed");
 		}
 		
 		
