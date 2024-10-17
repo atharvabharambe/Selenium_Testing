@@ -36,17 +36,17 @@ public class Responsive_test {
             driver.manage().window().setSize(screenSize);
             driver.get(url);
 
-            System.out.println("Testing " + device + " screen size: " + screenSize.getWidth() + "x" + screenSize.getHeight());
+            System.out.println("Test Case 7 : Testing " + device + " screen size: " + screenSize.getWidth() + "x" + screenSize.getHeight() + " passed");
 
             // Example: Checking for menu button visibility on mobile
             if (device.equals("mobile")) {
                 try {
                     WebElement menuButton = driver.findElement(By.id("menu-button"));
                     if (menuButton.isDisplayed()) {
-                        System.out.println("Menu button is visible on " + device);
+                        System.err.println("Test case 8: Menu button is visible on " + device);
                     }
                 } catch (Exception e) {
-                    System.out.println("Menu button not visible on " + device);
+                    System.err.println("Test case 8: Menu button not visible on " + device);
                 }
             }
 
